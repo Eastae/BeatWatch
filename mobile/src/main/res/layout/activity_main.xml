@@ -1,22 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:background="#224422"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:src="@drawable/background"
-        android:layout_gravity="center"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
 
     <TextView android:text="0" android:layout_width="wrap_content"
         android:id="@+id/heartbeat"
         android:layout_height="wrap_content"
-        android:textColor="#77ff99"
-        android:textSize="128sp"
-        android:layout_gravity="center"/>
+        android:textColor="#24CEB8"
+        android:textSize="86sp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:paddingTop="116dp"
+        android:paddingRight="25dp"
+        android:textAlignment="textEnd" />
 
-</FrameLayout>
+</RelativeLayout>

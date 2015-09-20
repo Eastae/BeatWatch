@@ -48,6 +48,7 @@ public class HeartbeatService extends Service implements SensorEventListener {
             onChangeListener = listener;
             // return currently known value
             listener.onValueChanged(currentValue);
+//            listener.onValueChanged(60);
         }
 
     }
@@ -84,6 +85,7 @@ public class HeartbeatService extends Service implements SensorEventListener {
         // is this a heartbeat event and does it have data?
         if(sensorEvent.sensor.getType()==Sensor.TYPE_HEART_RATE && sensorEvent.values.length>0 ) {
             int newValue = Math.round(sensorEvent.values[0]);
+//            int newValue = 60;
             //Log.d(LOG_TAG,sensorEvent.sensor.getName() + " changed to: " + newValue);
             // only do something if the value differs from the value before and the value is not 0.
             if(currentValue != newValue && newValue!=0) {
